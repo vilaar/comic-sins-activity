@@ -65,8 +65,8 @@ export default function ActivityObject({ activityObject }: { activityObject: any
 
 		const target = activityObject[0].startsWith('Mojo') ? activityObjectResults[1]['Mojo Unplugged'] : activityObjectResults[0]['Wicked Deeds']
 
-		const player = characterObject.player.toString().toLowerCase()
-		const playerId: any = { id }.id?.toString().toLowerCase()
+		const player = characterObject?.player?.toString()?.toLowerCase()
+		const playerId: any = { id }.id?.toString()?.toLowerCase()
 		if(player === playerId) target?.push(characterObject)
 	})	
 
