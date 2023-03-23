@@ -65,9 +65,9 @@ export default function ActivityObject({ activityObject }: { activityObject: any
 
 		const target = activityObject[0].startsWith('Mojo') ? activityObjectResults[1]['Mojo Unplugged'] : activityObjectResults[0]['Wicked Deeds']
 
-		const team = characterObject.team?.toString().toLowerCase()
-		const family = characterObject.family?.toString().toLowerCase()
-		const teamId: any = { id }.id?.toString().toLowerCase()
+		const team = characterObject.team?.toString()?.toLowerCase()
+		const family = characterObject.family?.toString()?.toLowerCase()
+		const teamId: any = { id }.id?.toString()?.toLowerCase()
 		if(team === teamId || family === teamId) target?.push(characterObject)
 	})	
 

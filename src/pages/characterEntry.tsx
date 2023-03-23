@@ -19,7 +19,7 @@ type CharacterEntryProps = {
 const CharacterEntry: React.FC<CharacterEntryProps> = ({site, complete, togglable, major, name, codename, player, posts, profile, team, family, cellNumber}) => {
 	const postsTotal = isNaN(posts) ? 0 : posts
 	const remainingPosts = major === 'Yes' ? 3 - postsTotal : 2 - postsTotal
-	const siteUrl = 'https://' + site.toLowerCase() + '.jcink.net'
+	const siteUrl = 'https://' + site?.toLowerCase() + '.jcink.net'
 	const profileLink = siteUrl + '/index.php?showuser=' + profile
 	const postsLink = siteUrl + '/index.php?act=Search&CODE=getalluser&mid=' + profile
 	const [postChange, setPostChange] = useState(postsTotal)
