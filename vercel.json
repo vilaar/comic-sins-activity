@@ -1,10 +1,10 @@
 {
 	"build": {
 		"env": {
-			"PRIVATE_KEY_ID": "@my-secrets:PRIVATE_KEY_ID",
-			"PRIVATE_KEY": "@my-secrets:PRIVATE_KEY",
-			"CLIENT_EMAIL": "@my-secrets:CLIENT_EMAIL",
-			"CLIENT_ID": "@my-secrets:CLIENT_ID"
+			"private_key_id": "@my-secrets:private_key_id",
+			"private_key": "@my-secrets:private_key",
+			"client_email": "@my-secrets:client_email",
+			"client_id": "@my-secrets:client_id"
 		}
 	}
 }
